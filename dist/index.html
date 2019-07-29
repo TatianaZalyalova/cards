@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    	<ul class="navbar-nav">
+						    <li class="nav-item">
+						        <a class="nav-link" href="#sovest">Совесть</a>
+						    </li>
+						      <li class="nav-item">
+						        <a class="nav-link" href="#partners">Партнеры</a>
+						      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#svoboda">Свобода</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#halva">Халва</a>
+                  </li>
+				   		</ul>				    
+				  </div>
+			</nav>
+		
+	</header>
+		<div class="row advantages">
+			<div class="col-12 col-md-7">
+			<h1>Выбери карту рассрочки, без комиссий и переплат</h1>			
+					<ul>
+						<li><p>0%</p><span>На все покупки в рассрочку</span></li>
+						<li><p>5минут</p><span>Среднее время на оформление карты</span></li>
+						<li><p>60 000</p><span>магазинов-партнеров</span></li>
+						<li><p>0₽</p><span>бесплатное обслуживание</span></li>
+					</ul>				
+			</div>
+
+			<div class="col col-sm-12 col-md-5">	
+			<form id="form">
+        <div class="thank"><span>Спасибо за заявку!</span></div> 
+		  <div class="form-group">
+		    <label for="surnameInput">Фамилия</label>
+		    <input type="text" name = "surname" class="form-control" id="surnameInput"  placeholder="Введите фамилию" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="nameInput">Имя</label>
+		    <input type="text" name = "name" class="form-control" id="nameInput" placeholder="Введите имя" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="patronymicInput">Отчество</label>
+		    <input type="text" name = "patronymic" class="form-control" id="patronymicInput" placeholder="Введите отчество" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="phoneInput">Телефон</label>
+		    <input type="text" name = "phone" class="form-control" id="phoneInput" placeholder="Введите телефон" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="phoneInput">Выберите карту рассрочки</label>
+		    <select class="form-control" id = "form-control">
+		    	<option>Совесть</option>
+		    	<option>Свобода</option>
+		    	<option>Халва</option>
+		    </select>
+		  </div>
+		  <div class="form-check">
+		    <input type="checkbox" class="form-check-input" id="condition">
+		    <label class="form-check-label" for="сheck">Нажимая кнопку «Заказать карту», я соглашаюсь с условиями направления заявки и рекламно‑информационного обслуживания</label>
+		  </div>
+		  <button class ="sending" type="submit" disabled = "true">Заказать карту</button>
+		</form>
+		</div>
+		</div>
+<main>
+	
+	<section class="sovest card" id = "sovest">
+		<div class="row">
+			<div class=" col col-lg-4 col-md-6 col-sm-12" >
+		<img src="img/sovest.jpg">
+		<a class="btn btn-primary" href="#" role="button">Заказать карту</a>
+		</div>
+		<div class=" col col-lg-8 col-md-6 col-sm-12">
+		<ul class="nav nav-pills " id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="card-tab" data-toggle="pill" href="#card" role="tab" aria-controls="card" aria-selected="true">О карте</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="sovest_basic-tab" data-toggle="pill" href="#sovest_basic" role="tab" aria-controls="sovest_basic" aria-selected="false">Базовые условия</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="sovest_tan-tab" data-toggle="pill" href="#sovest_tan" role="tab" aria-controls="sovest_tan" aria-selected="false">Опция "Десятка"</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="sovest_cash-tab" data-toggle="pill" href="#sovest_cash" role="tab" aria-controls="sovest_cash" aria-selected="false">Опция "Снятие наличных"</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="sovest_buy-tab" data-toggle="pill" href="#sovest_buy" role="tab" aria-controls="sovest_buy" aria-selected="false">Опция "Покупки"</a>
+  </li>
+  
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="card" role="tabpanel" aria-labelledby="card-tab">
+  	<table class="table table-sm ">
+  		<tr>
+  			<th>Технологические особенности</th>
+  			<td>технология 3D Secure, чип, бесконтактные платежи (payWave)</td>
+  		</tr>
+  		<tr>
+  			<th>Выпуск</th><td>0₽</td>
+  		</tr>
+  		<tr>
+  			<th>Срок действия карты</th><td>5 лет</td>
+  		</tr>
+  		<tr>
+  			<th>Годовое обслуживание</th><td>0₽</td>
+  		</tr>
+  		<tr>
+  			<th>Перевыпуск по инициативе банка или в связи с окончанием срока действия карты</th><td>0₽</td>
+  		</tr>
+  		<tr><th>Перевыпуск по инициативе клиента по причине утраты, порчи</th><td>690₽</td>
+  		</tr>
+  		<tr>
+  			<th>SMS-информирование</th><td>0₽</td>
+  		</tr>	
+  	</table>
+  </div>
+  <div class="tab-pane fade" id="sovest_basic" role="tabpanel" aria-labelledby="sovest_basic-tab">
+  	<table class="table table-sm">
+  		<tr>
+  			<th>Лимит рассрочки</th>
+  			<td>5 000 ₽ — 300 000 ₽</td>
+  		</tr>
+  		<tr>
+  			<th>Ставка за использование рассрочки</th><td>0% годовых</td>
+  		</tr>
+  		<tr>
+  			<th>Ставка за пользование кредитом по окончании льготного периода кредитования</th><td>10% годовых</td>
+  		</tr>
+  		<tr>
+  			<th>Комиссия за досрочное погашение</th><td>0₽</td>
+  		</tr>
+  		<tr>
+  			<th>Дата внесения ежемесячного платежа</th><td>До конца месяца, следующего за расчётным</td>
+  		</tr>
+  		<tr><th>Перевыпуск по инициативе клиента по причине утраты, порчи</th><td>690₽</td>
+  		</tr>
+  		<tr>
+  			<th>Период рассрочки</th><td>В зависимости от партнера, от 1 до 12 месяцев</td>
+  		</tr>
+  		<tr>
+  			<th>Штраф за невнесение ежемесячного платежа</th><td>590 ₽</td>
+  		</tr>
+  		<tr>
+  			<th>Неустойка за неисполнение или ненадлежащее исполнение обязанностей по возврату потребительского кредита по окончании периода рассрочки</th><td>10% годовых</td>
+  		</tr>
+  	</table>
+  </div>
+  <div class="tab-pane fade" id="sovest_tan" role="tabpanel" aria-labelledby="sovest_tan-tab">
+  	<table class="table table-sm">
+  		<tr>
+  			<th>Период рассрочки</th>
+  			<td>10 месяцев у всех партнёров (в течение срока действия опции)</td>
+  		</tr>
+  		<tr>
+  			<th>Комиссия за подключение на следующую покупку в течение месяца</th><td>799 ₽</td>
+  		</tr>
+  		<tr>
+  			<th>Комиссия за подключение на 1 месяц покупок</th><td>599 ₽</td>
+  		</tr>
+  		<tr>
+  			<th>Комиссия за подключение на 3 месяца покупок</th><td>1299 ₽</td>
+  		</tr>
+  		<tr>
+  			<th>Комиссия за внесение платежа</th><td>0 ₽</td>
+  		</tr>
+  		
+  	</table>
+  </div>
+
+  <div class="tab-pane fade" id="sovest_cash" role="tabpanel" aria-labelledby="sovest_cash-tab">
+  	<table class="table table-sm">
+  		<tr>
+  			<th>Подключение</th><td>0 ₽</td>
+  		</tr>
+  		<tr>
+  			<th>Доступные банкоматы</th><td>все банкоматы РФ</td>
+  		</tr>
+  		<tr>
+  			<th>Лимит на 1 снятие</th><td>7 500 ₽</td>
+  		</tr>
+  		<tr>
+  			<th>Лимит на снятие в месяц (определяется индивидуально)</th><td>До 20 000 ₽</td>
+  		</tr>
+  		<tr>
+  			<th>Период рассрочки на снятую сумму</th><td>3 месяца</td>
+  		</tr>
+  		<tr><th>Комиссия за каждое снятие</th><td>599 ₽</td>
+  		</tr>
+  		
+  	</table>
+  </div>
+
+   <div class="tab-pane fade" id="sovest_buy" role="tabpanel" aria-labelledby="sovest_buy-tab">
+  <table class="table table-sm">
+  		<tr>
+  			<th></th>
+  			<th>Условия опции «Покупки по всей России» (нужно подключить)</th>
+  			<th>Условия опции «Покупки за границей» (нужно подключить)</th>
+  		</tr>
+  		<tr>	
+  			<th>Период рассрочки</th><td>3 месяца</td><td>3 месяца</td>
+  		</tr>
+  		<tr>
+  			<th>Комиссия</th><td>499 рублей за подключение на 30 дней покупок</td><td>5% от суммы совершаемой операции в российских рублях</td>
+  		</tr>
+  	</table>
+  </div> 		
+  	
+  </div>
+  </div>
+</div>	
+	</section>
+
+	<section class="partners" id="partners">
+		<div class="owl-carousel">
+
+			<div class="owl-item" >
+        <a href="https://karusel.ru/" target="_blank">
+				<div class="partner">
+					<img src="img/karusel.png" width="98px" height="70px">
+          <p class="partner_name">Карусель</p>
+          <p class="month">Рассрочка 1 мес.</p>
+				</div>
+      </a>
+			</div>
+			<div class="owl-item">
+         <a href="https://www.wildberries.ru/" target="_blank">
+				<div class="partner">
+					 <img src="img/wildberries.png" width="98px" height="70px">
+          <p class="partner_name">Wildberries</p>
+          <p class="month">Рассрочка 4 мес.</p>
+				</div>
+        </a>	
+			</div>
+      <div class="owl-item">
+        <a href="https://www.kfc.ru/" target="_blank">
+        <div class="partner">
+           <img src="img/kfc.png" width="98px" height="70px">
+          <p class="partner_name">KFC</p>
+          <p class="month">Рассрочка 1 мес.</p>
+        </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+        <a href="https://www.perekrestok.ru/" target="_blank">
+        <div class="partner">
+           <img src="img/perekrestok.png" width="98px" height="70px">
+          <p class="partner_name">Перекресток</p>
+          <p class="month">Рассрочка 1 мес.</p>
+        </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://www.sportmaster.ru/" target="_blank">
+            <div class="partner">
+               <img src="img/sportmaster.png" width="98px" height="70px">
+              <p class="partner_name">Спортмастер</p>
+              <p class="month">Рассрочка 4 мес.</p>
+            </div>  
+          </a>
+      </div>
+      <div class="owl-item">
+         <a href="https://www.eldorado.ru/" target="_blank">
+            <div class="partner">
+               <img src="img/eldorado.png" width="98px" height="70px">
+              <p class="partner_name">Эльдорадо</p>
+              <p class="month">Рассрочка 2 мес.</p>
+            </div>
+         </a>  
+      </div>
+      <div class="owl-item">
+        <a href="https://www.detmir.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/detskijmir.png" width="98px" height="70px">
+            <p class="partner_name">Детский мир</p>
+            <p class="month">Рассрочка 1 мес.</p>
+          </div> 
+        </a> 
+      </div>
+      <div class="owl-item">
+         <a href="https://www.detmir.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/diksi.png" width="98px" height="70px">
+            <p class="partner_name">Дикси</p>
+            <p class="month">Рассрочка 1 мес.</p>
+          </div>
+          </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://dixy.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/citilink.png" width="98px" height="70px">
+            <p class="partner_name">Ситилинк</p>
+            <p class="month">Рассрочка 1 мес.</p>
+          </div>
+         </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://www.metro-cc.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/metro.png" width="98px" height="70px">
+            <p class="partner_name">Метро</p>
+            <p class="month">Рассрочка 1-2 мес.</p>
+          </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://eda.yandex/" target="_blank">
+          <div class="partner">
+             <img src="img/edayandex.png" width="98px" height="70px">
+            <p class="partner_name">Яндекс.Еда</p>
+            <p class="month">Рассрочка 1 мес.</p>
+          </div> 
+        </a> 
+      </div>
+      <div class="owl-item">
+        <a href="https://gett.com/ru/" target="_blank">
+          <div class="partner">
+             <img src="img/gett.png" width="98px" height="70px">
+            <p class="partner_name">Gett</p>
+            <p class="month">Рассрочка 2 мес.</p>
+          </div> 
+        </a> 
+      </div>
+      <div class="owl-item">
+        <a href="https://www.mvideo.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/mvid.png" width="98px" height="70px">
+            <p class="partner_name">М.Видео</p>
+            <p class="month">Рассрочка 2 мес.</p>
+          </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+        <a href="https://leroymerlin.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/leroymerlinmarket.png" width="98px" height="70px">
+            <p class="partner_name">Леруа Мерлен МАРКЕТ</p>
+            <p class="month">Рассрочка 3 мес.</p>
+          </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+        <a href="https://www.adidas.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/adidas.png" width="98px" height="70px">
+            <p class="partner_name">Adidas</p>
+            <p class="month">Рассрочка 3 мес.</p>
+          </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+        <a href="https://www.billa.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/billa.png" width="98px" height="70px">
+            <p class="partner_name">BILLA</p>
+            <p class="month">Рассрочка 1 мес.</p>
+          </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+        <a href="https://www.ozon.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/ozon.png" width="98px" height="70px">
+            <p class="partner_name">Ozon</p>
+            <p class="month">Рассрочка 3 мес.</p>
+          </div> 
+        </a> 
+      </div>
+      <div class="owl-item">
+         <a href="https://zoloto585.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/zolotoy.png" width="98px" height="70px">
+            <p class="partner_name">585 Золотой</p>
+            <p class="month">Рассрочка 3 мес.</p>
+          </div>
+         </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://www.lego.com/ru-ru" target="_blank">
+            <div class="partner">
+               <img src="img/lego.png" width="98px" height="70px">
+              <p class="partner_name">LEGO</p>
+              <p class="month">Рассрочка 3 мес.</p>
+            </div>
+         </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://nyxcosmetic.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/nyx.png" width="98px" height="70px">
+            <p class="partner_name">NYX</p>
+            <p class="month">Рассрочка 3 мес.</p>
+          </div> 
+        </a> 
+      </div>
+      <div class="owl-item">
+         <a href="https://amwine.ru/" target="_blank">
+        <div class="partner">
+           <img src="img/aromatniimir.png" width="98px" height="70px">
+          <p class="partner_name">Ароматный мир</p>
+          <p class="month">Рассрочка 1 мес.</p>
+        </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://www.aeroflot.ru/ru-ru" target="_blank">
+          <div class="partner">
+             <img src="img/aeroflot.png" width="98px" height="70px">
+            <p class="partner_name">АЭРОФЛОТ</p>
+            <p class="month">Рассрочка 1 мес.</p>
+          </div> 
+        </a> 
+      </div>
+      <div class="owl-item">
+        <a href="dobromed.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/dobromed.png" width="98px" height="70px">
+            <p class="partner_name">Добромед</p>
+            <p class="month">Рассрочка 9 мес.</p>
+          </div>
+        </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://www.asus.com/ru/" target="_blank">
+          <div class="partner">
+             <img src="img/asus.png" width="98px" height="70px">
+            <p class="partner_name">ASUS</p>
+            <p class="month">Рассрочка 3 мес.</p>
+          </div>
+         </a>  
+      </div>
+      <div class="owl-item">
+         <a href="https://burgerking.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/burger.png" width="98px" height="70px">
+            <p class="partner_name">Burger King</p>
+            <p class="month">Рассрочка 1 мес.</p>
+          </div>
+        </a> 
+      </div>
+      <div class="owl-item">
+         <a href="https://www.lamoda.ru/" target="_blank">
+          <div class="partner">
+             <img src="img/lamoda.png" width="98px" height="70px">
+            <p class="partner_name">Lamoda</p>
+            <p class="month">Рассрочка 3 мес.</p>
+          </div>
+          </a>  
+      </div>	
+		</div>
+		
+	</section>
+	<section class="svoboda card" id="svoboda">
+	<div class="row">		
+		<div class="col col-sm-12 col-md-6 col-lg-4">
+			<img src="img/svoboda.jpg">
+			<a class="btn btn-primary" href="#" role="button">Заказать карту</a>
+		</div>
+		<div class="col col-sm-12 col-md-6 col-lg-8">
+		<ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+  			<li class="nav-item">
+   			 <a class="nav-link active" id="svoboda_card-tab" data-toggle="pill" href="#svoboda_card" role="tab" aria-controls="svoboda_card" aria-selected="true">О карте</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="svoboda_tariff-tab" data-toggle="pill" href="#svoboda_tariff" role="tab" aria-controls="svoboda_tariff" aria-selected="false">Тариф</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="svoboda_card" role="tabpanel" aria-labelledby="svoboda_card-tab">
+  	<table class="table table-sm">
+  		<tr>
+  			<th>Технологические особенности</th>
+  			<td>моментальная выдача карты, технология 3D Secure, чип, бесконтактные платежи (payWave)</td>
+  		</tr>
+  		<tr>
+  			<th>Выпуск и годовое обслуживание</th><td>0₽</td>
+  		</tr>
+  		<tr>
+  			<th>Срок действия карты</th><td>5 лет</td>
+  		</tr>
+  		<tr>
+  			<th>Годовое обслуживание</th><td>0₽</td>
+  		</tr>
+  		
+  		<tr>
+  			<th>SMS-информирование</th><td>99 руб. в месяц, начиная с третьего</td>
+  		</tr> 		
+  	</table>
+  </div>
+
+  <div class="tab-pane fade" id="svoboda_tariff" role="tabpanel" aria-labelledby="svoboda_tariff-tab">
+  	<table class="table  table-sm">
+  		<tr>
+  			<th>Период рассрочки</th>
+  			<td>рассрочка до 12 месяцев на покупки у партнеров</td>
+  		</tr>
+  		<tr>
+  			<th>Использование собственных средств</th><td>возможно</td>
+  		</tr>
+  		<tr>
+  			<th>штраф за каждый факт просрочки минимального платежа </th><td>590 руб</td>
+  		</tr>
+  		<tr>
+  			<th>ежемесячное подключение к программе "Свобода+"</th><td>включает опции "Пропуск платежа" и "Отказ от взыскания" - 0,99% от задолженности (мин. 99руб., макс. 499 руб.);</td>
+  		</tr>
+  		</table>
+  </div>
+ 
+</div>	</div>
+		</div>
+	</section>
+  <section class="about">
+    <div class="row">
+    <div class="col col-12"><h2 class="about-title text-center">Как это работает</h2></div>
+   
+      <div class="col col-lg-6 col-md-12 col-sm-12 interest">
+        <h3>Почему нет процентов?</h3>
+        <p>Кто-то всегда должен платить. Но не всегда это должны делать вы. С картой рассрочки вы не платите проценты, банк получает вознаграждение от партнеров, а партнеры — рост продаж, вы же покупаете, что хотите в рассрочку и без переплат. Выгодно всем!</p>        
+      </div>
+      <div class="col col-lg-6 col-md-12 col-sm-12 limit">
+        <h3>Как увеличить лимит или получить лимит для покупок вне партнерской сети?</h3>
+        <p>Активно пользуйтесь картой рассрочки и вовремя погашайте задолженность. Банки пересматривают карточные лимиты каждые полгода и всегда рады предоставить вам больше свободы.</p> 
+      </div>
+    
+  </div>
+  </section>
+
+	<section class="halva card" id="halva">
+		<div class="row">
+			<div class="col col-sm-12 col-md-6 col-lg-4">
+				<img src="img/halva.jpg">
+				<a class="btn btn-primary" href="#" role="button">Заказать карту</a>
+			</div>
+			<div class="col col-sm-12 col-md-6 col-lg-8">
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  					<li class="nav-item">
+   						 <a class="nav-link active" id="halva_card-tab" data-toggle="pill" href="#halva_card" role="tab" aria-controls="halva_card" aria-selected="true">О карте</a>
+  					</li>
+					<li class="nav-item">
+					    <a class="nav-link" id="halva_tariff-tab" data-toggle="pill" href="#halva_tariff" role="tab" aria-controls="halva_tariff" aria-selected="false">Тариф</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" id="halva_cash-tab" data-toggle="pill" href="#halva_cash" role="tab" aria-controls="halva_cash" aria-selected="false">Снятие наличных</a>
+					</li>
+				</ul>
+			
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="halva_card" role="tabpanel" aria-labelledby="halva_card-tab">
+  	<table class="table table-sm">
+  		<tr>
+  			<th>Тип карты</th>
+  			<td>Mastercard World</td>
+  		</tr>
+  		<tr>
+  			<th>Технологические особенности</th>
+  			<td>моментальная выдача карты, технология 3D Secure, чип, бесконтактные платежи (PayPass), технология 3D Secure</td>
+  		</tr>
+  		<tr>
+  			<th>Выпуск и годовое обслуживание</th><td>0 руб. за карту со стандартным дизайном; 2 000 / 3 000 руб. за именную карту с индивидуальным дизайном при получении в офисе банка / при доставке вне офиса банка</td>
+  		</tr> 		
+  	</table>
+  </div>
+
+  <div class="tab-pane fade" id="halva_tariff" role="tabpanel" aria-labelledby="halva_tariff-tab">
+  	<table class="table table-sm">
+  		<tr>
+  			<th>Период рассрочки</th>
+  			<td>рассрочка на покупки в магазинах-партнерах - до 12 месяцев (возможно увеличение до 36 месяцев с помощью опции «Защита платежа»); базовый срок рассрочки 1-3 месяца в партнерской сети может быть изменен в соответствии со следующими условиями: сумма покупки до 3 000 руб. - срок рассрочки устанавливается в соответствии с базовыми условиями, свыше 3 000 руб. (включительно) - срок рассрочки - 4 месяца</td>
+  		</tr>
+  		<tr>
+  			<th>Использование собственных средств</th><td>возможно</td>
+  		</tr>
+  		<tr>
+  			<th>Размер платежа</th><td>платеж рассчитывается исходя из суммы операции и количества месяцев рассрочки;</td>
+  		</tr>
+  		<tr>
+  			<th>ежемесячное подключение к программе "Свобода+"</th><td>включает опции "Пропуск платежа" и "Отказ от взыскания" - 0,99% от задолженности (мин. 99руб., макс. 499 руб.);</td>
+  		</tr>
+  		</table>
+  </div>
+  <div class="tab-pane fade" id="halva_cash" role="tabpanel" aria-labelledby="halva_cash-tab">
+  		<table class="table table-sm">
+  		<tr>
+  			<th>Снятие наличных в банкоматах банка</th>
+  			<td>2,9%+290 руб. - за счет лимита рассрочки, 0% - за счет собственных средств</td>
+  		</tr>
+  		<tr>
+  			<th>Снятие наличных в ПВН банка</th><td>2,9%+290 руб. - за счет лимита рассрочки, 0% - за счет собственных средств</td>
+  		</tr>
+  		<tr>
+  			<th>Снятие наличных в банкоматах других банков</th><td>2,9%+290 руб. - за счет лимита рассрочки, 0% - за счет собственных средств</td>
+  		</tr>
+  		<tr>
+  			<th>Снятие наличных в ПВН других банков</th><td>2,9%+290 руб. - за счет лимита рассрочки, 0% - за счет собственных средств</td>
+  		</tr>
+  		<tr>
+  			<th>Лимиты по операциям</th>
+  			<td>снятие наличных: до 15 000 руб. за одну операцию, до 100 000 руб. в месяц; общая сумма расходных операций до 10 000 000 руб.</td>
+  		</tr>
+  		</table>
+  </div>
+</div>
+  </div>
+</div>
+		</div>	
+	</section>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
